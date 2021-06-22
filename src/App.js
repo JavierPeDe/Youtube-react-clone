@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import youtube from './apis/youtube';
 import './App.scss';
-
+import { SearchBar } from './components/SearchBar';
 export const App = () => {
   const [newVideos, setNewVideos] = useState({
     videos: [],
@@ -18,12 +18,14 @@ export const App = () => {
       ...preNewVideos,
       videos: response.data.items
     }))
+    console.log(newVideos)
   }
 
 
   return (
     <div className="App">
-      <button onClick={() => handleSubmit('game')} >Play</button>
+      <SearchBar handleFormSubmit={handleSubmit}/>
+     
       <h1>Clone Youtube</h1>
     </div>
   );
