@@ -1,5 +1,35 @@
+.container-form {
+  margin: 10px;
+  height: 45px;
+  width: 400px;
+  background: #fff;
 
-.container-form{
-    height: 70px;
-    width: 200px;
+  position: relative;
+  border: 1px solid #cdc9c3;
+  input {
+    height: 100%;
+    width: 320px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+  }
+  i {
+    height: 100%;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #cdc9c3;
+    background: #fff;
+    cursor: pointer;
+    border-left: 1px solid #cdc9c3;
+  }
+  i:hover {
+    color: #000;
+  }
 }
