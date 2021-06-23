@@ -1,8 +1,12 @@
 import React from 'react';
-import { VideoDetail } from './VideoDetail/index';
-export const VideoList = ({ videos }) => {
-  
-    const renderVideos = videos.map((video) => <VideoDetail key={video.id.videoId} video={video} />);
+import { VideoItem } from './VideoItem/index';
+import './index.scss'
+export const VideoList = ({ videos, handleMainVideo }) => {
 
-  return ( <div className="container-videos">{renderVideos}</div>)
+  const renderVideos = videos.map((video) => <VideoItem key={video.id.videoId} video={video} handleMainVideo={handleMainVideo} />);
+
+  return (<div className="container-videos">
+    
+    {renderVideos}
+    </div>)
 };

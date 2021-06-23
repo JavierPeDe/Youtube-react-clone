@@ -1,8 +1,8 @@
 import React from 'react';
-
-export const VideoDetail = ({ video }) => {
+import './index.scss'
+export const VideoItem = ({ video, handleMainVideo }) => {
   return (
-    <div>
+    <div className='video-item-container' onClick={()=>handleMainVideo(video)}>
       <img
         src={video.snippet.thumbnails.medium.url}
         alt={video.snippet.description}

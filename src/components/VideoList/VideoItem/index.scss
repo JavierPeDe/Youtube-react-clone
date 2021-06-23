@@ -1,0 +1,21 @@
+.video-item-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 550px;
+    margin: 10px;
+    border: 1px solid rgba(205, 201, 195, 0.3);
+    .img{
+        width: 350px;
+        height: auto;
+    }
+    .video-info-container{
+        width: 200px;
+        text-align: center;
+        
+        .h5{
+            font-size: 20px;
+        }
+    }
+
+}
